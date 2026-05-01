@@ -1,5 +1,4 @@
 # Privacy Policy for BurgerPassport
-
 **Last updated: 1 May 2026**
 
 Demir Akarsu built BurgerPassport as a paid app. This service is provided by Demir Akarsu and is intended for use as is.
@@ -16,6 +15,7 @@ When you use BurgerPassport, we collect the following information:
 - **Burger data** — restaurant names, cities, countries, scores, notes, and photos you log in the app. If you make a burger public, this data is visible to other BurgerPassport users in the Explore feed.
 - **Profile information** — your profile photo and bio if you choose to add them.
 - **Friends and social data** — usernames of friends you connect with and questers you invite to score burgers.
+- **Device token** — if you enable push notifications, we collect your device token to send you notifications about quester scores, friend requests, and friend request acceptances. This token is stored against your account and used solely to deliver notifications to your device.
 
 ---
 
@@ -27,8 +27,21 @@ We use the information collected solely to provide and improve the BurgerPasspor
 - To enable the quester scoring feature between friends
 - To show public burgers in the Explore feed (only if you mark entries as public)
 - To display your passport stamps, stats, and tier progress
+- To send push notifications when a quester scores your burger, when you receive a friend request, or when a friend request is accepted (only if you have enabled notifications)
 
 We do not sell your data. We do not use your data for advertising.
+
+---
+
+## Push Notifications
+
+If you enable notifications, we collect your device token to deliver push notifications for the following events:
+
+- A quester submits their score on a burger you created
+- Someone sends you a friend request
+- Someone accepts your friend request
+
+You can disable notifications at any time in the app Settings or in your device Settings under Notifications. Disabling notifications removes your device token from our servers.
 
 ---
 
@@ -39,6 +52,7 @@ BurgerPassport uses the following third party services which may collect informa
 - **Firebase Authentication** (Google) — handles sign in and account management. [Privacy policy](https://firebase.google.com/support/privacy)
 - **Cloud Firestore** (Google) — stores your burger data, profile, and social connections. [Privacy policy](https://firebase.google.com/support/privacy)
 - **Firebase Storage** (Google) — stores photos you upload. [Privacy policy](https://firebase.google.com/support/privacy)
+- **Firebase Cloud Messaging** (Google) — delivers push notifications to your device. [Privacy policy](https://firebase.google.com/support/privacy)
 - **Apple StoreKit** — handles the one-time in-app purchase. [Privacy policy](https://www.apple.com/legal/privacy/)
 
 ---
@@ -57,7 +71,7 @@ If you mark a burger entry as public, the following information becomes visible 
 
 ## Your Data Rights
 
-You can delete your account and all associated data at any time by contacting us or directly in the app via settings. You can edit or delete individual burger entries within the app at any time.
+You can delete your account and all associated data at any time directly in the app via Settings. Deleting your account removes all burger entries, photos, scores, friends, and your profile from our servers. You can edit or delete individual burger entries within the app at any time.
 
 ---
 
