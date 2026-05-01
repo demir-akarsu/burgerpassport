@@ -57,7 +57,7 @@ If you mark a burger entry as public, the following information becomes visible 
 
 ## Your Data Rights
 
-You can delete your account and all associated data at any time by contacting us. You can edit or delete individual burger entries within the app at any time.
+You can delete your account and all associated data at any time by contacting us or directly in the app via settings. You can edit or delete individual burger entries within the app at any time.
 
 ---
 
@@ -76,4 +76,4 @@ We may update this privacy policy from time to time. Changes will be posted on t
 ## Contact
 
 If you have any questions about this privacy policy, contact us at:
-[demir@burgerpassport.app](mailto:demir@burgerpassport.app)
+[dakarsu01@gmail.com](mailto:dakarsu01@gmail.com)
