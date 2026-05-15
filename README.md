@@ -289,6 +289,21 @@ firebase deploy --only functions
 
 ## Version History
 
+### 1.3.0 - May 2026
+Bug Fixes
+ 
+- United Kingdom appearing multiple times in Passport and Countries — "England", "UK", "Northern Ireland", "Scotland" and "Wales" now all group as a single United Kingdom stamp and country count
+- Deleting a burger now also removes its photos from Firebase Storage — previously only the Firestore document was deleted, leaving orphaned files
+- Like notifications in the Notifications tab are now tappable — tap any like notification to open the burger that was liked
+- Explore keyboard did not dismiss when tapping the blank space at the top of the screen — fixed using a UIKit navigation bar gesture recogniser
+- Private quested burgers were visible on a quester's public profile when viewed by a third party — now correctly hidden; only the burger owner and the quester themselves can see private quested burgers
+- Country count on home screen, friend profiles and Stats was inflated when the same country was stored under different names — fixed with the same normalisation as Passport
+- Like count and liked state not loading when opening a burger — fixed for both own and others' burgers
+- Own burgers showed no like count — now shows a read-only heart with the like count
+- Explore Most Liked sort was not ordering correctly — likeCount field was missing on older documents and not being updated on new likes; both now fixed
+- Explore Highest/Lowest Score sort was not ordering correctly for quested burgers — averageGroupScore field was not being recalculated after quester scores were submitted; backfill applied to all existing burgers
+- Explore profile pictures not loading on first render — fixed a race condition where owner profile image URLs arrived after cards were already drawn
+
 ### 1.2.0 - May 2026
 What's New
  
