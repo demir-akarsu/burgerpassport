@@ -289,6 +289,30 @@ firebase deploy --only functions
 
 ## Version History
 
+### 1.4.0 - May 2026
+Version 1.4.0
+
+What's New
+
+Quick save in Edit Burger
+A Save button now appears in the top-right corner when editing a burger, so you can save your changes from any step without having to scroll through to the end.
+
+Decline quester invites
+You can now swipe left on a pending burger score in the Notifications tab to decline it, removing it from your list without having to score it.
+
+Photo reordering
+Photos can now be reordered in both the Log and Edit burger flows — hold and drag a thumbnail left or right to change the order. The first photo is always the hero image shown in lists and on the map.
+
+Camera photos preserved when switching to library
+Taking a photo with the camera and then adding more from your library no longer removes the camera shot. All photos are now correctly combined up to the 3-photo limit.
+
+Score 10 shown in yellow
+A perfect 10 on any scoring category or as a weighted average now displays in bright yellow, making it clearly distinct from the green used for high scores.
+
+Bug Fixes
+
+- Version number in Settings was hardcoded as 1.0 — now reads from the app bundle and updates automatically with each release
+
 ### 1.3.0 - May 2026
 Bug Fixes
  
