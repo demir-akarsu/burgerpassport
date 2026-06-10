@@ -289,6 +289,93 @@ firebase deploy --only functions
 
 ## Version History
 
+### 2.0.0 - June 2026
+BurgerPassport 2.0 🍔
+─────────────────────
+
+This is the biggest update to BurgerPassport yet. The Explore feed has been completely redesigned, the like system has been rebuilt from the ground up, and profiles are now far more connected and interactive.
+
+─────────────────────
+EXPLORE FEED — REDESIGNED
+─────────────────────
+
+• Completely new card layout inspired by social media feeds — profile picture and username at the top, notes, then the hero image, then engagement
+• Cards are now visually separated with rounded corners, a subtle border, and shadow so each entry feels like its own post
+• Passport tier badge (🥉🥈🥇💎) shown next to every username so you can see how experienced each reviewer is at a glance
+• Quester badge shown when a burger was scored by a group
+• Restaurant and city shown in the header alongside the flag
+• Notes are shown above the image and truncate to 3 lines — tap "...more" to expand in place
+• Profile picture and username are now tappable — tap to view that user's profile, send a friend request, or view your own profile
+• You can now like your own burgers
+
+─────────────────────
+LIKES — REBUILT
+─────────────────────
+
+• Like counts are now always accurate — pulled directly from the likes subcollection rather than a stored field, which could get out of sync
+• Existing corrupted like counts heal automatically the first time a burger is viewed
+• New social-media style layout: a ❤️ count row above the action buttons — tap it to see who liked
+• Like, Share, and Reviews buttons now have a full-width tap area so they're much easier to hit
+• You can like your own burgers from both Explore and the burger detail view
+• Likers sheet now shows profile pictures, with your friends listed first
+• Tap any friend in the likers list to view their profile
+• Tap a non-friend in the likers list to send them a friend request
+
+─────────────────────
+SHARE
+─────────────────────
+
+• Share button added to every card in Explore and to every burger detail view
+• Shares the burger name, restaurant, location, score, and notes via the iOS share sheet
+• Includes the hero photo where available
+• Works correctly from all screens including when a burger is open as a full-screen sheet
+
+─────────────────────
+RESTAURANT REVIEWS
+─────────────────────
+
+• When multiple entries exist for the same restaurant in the current feed, a Reviews button appears in the action bar with a count badge
+• Tap Reviews to see all entries for that restaurant sorted by score — each row shows the burger name, reviewer, date, and score
+• Tap any entry in the list to open the full burger detail
+
+─────────────────────
+PROFILES
+─────────────────────
+
+• Viewing your own profile from Explore now shows accurate burger, country, and friend counts — including private burgers in your totals
+• Countries stat is now tappable — see a full list of every country with a burger count and the country name in its own language
+• Friends stat is now tappable — see who that user is friends with, add anyone you don't already know
+• Burger count, country count, and friend count all update instantly without needing to refresh
+
+─────────────────────
+FLAGS & COUNTRY NAMES
+─────────────────────
+
+• Flag emoji now works for every country in the world — previously only ~40 countries were supported and others showed a white flag
+• Country names now shown in their own language in the Countries list (Deutschland, Česko, 日本, Ελλάδα, etc.) with the English name as a subtitle
+
+─────────────────────
+PERFORMANCE
+─────────────────────
+
+• Two-level image cache (memory + disk) introduced — images load instantly on repeat visits and survive app restarts
+• Disk cache prunes entries older than 7 days automatically to keep storage usage low
+• Explore now pre-warms images for the first visible cards before the feed appears, so profile pictures and hero images load without a blank flash on first open
+
+─────────────────────
+BUG FIXES
+─────────────────────
+
+• Fixed: tapping Like, Share, or Reviews in Explore sometimes opened the burger instead of performing the action
+• Fixed: tapping "...more" on notes opened the burger instead of expanding the text
+• Fixed: blank space above the hero image was tappable and opened the burger
+• Fixed: likers sheet could dismiss itself unexpectedly when tapping a non-friend
+• Fixed: profile picture avatars in the likers sheet could expand to full size when no image was available
+• Fixed: like counts showing higher than the actual number of likers (data healed on view)
+• Fixed: share button did nothing when tapped from the burger detail view
+• Fixed: Czechia and many other countries showed a white flag instead of the correct emoji
+• Fixed: app crash caused by a duplicate dictionary key in the country names list
+
 ### 1.4.0 - May 2026
 Version 1.4.0
 
