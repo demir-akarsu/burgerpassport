@@ -289,6 +289,82 @@ firebase deploy --only functions
 
 ## Version History
 
+### 2.1.0 - June 2026
+BurgerPassport 2.1 🍔
+─────────────────────
+
+A polish-focused release: smoother loading, a more characterful Passport,
+a cleaner map, deeper Countries exploration, and a completely refreshed
+Stats screen.
+
+─────────────────────
+LOADING & VISUAL POLISH
+─────────────────────
+
+• Shimmer loading animation replaces flat grey placeholders while images
+  load — used across Explore hero images, the map detail card, the Visits
+  sheet, profile galleries, friend burger lists, and burger detail views
+• Fixed: burgers with photos that hadn't finished loading yet briefly
+  showed a "No photo" empty state instead of a loading indicator
+• Explore score badges are now colour-filled pills (matching the score
+  colour) instead of plain text, for more visual weight at a glance
+
+─────────────────────
+PASSPORT
+─────────────────────
+
+• Country stamps redesigned with a hand-stamped, ink-bleed look — dashed
+  distressed rings, a soft ink-bleed texture, and per-country ink colours
+  (red, blue, green, sepia) instead of plain grey circles
+
+─────────────────────
+MAP
+─────────────────────
+
+• Pins now cluster automatically when zoomed out, showing a count badge
+  in dense areas (e.g. Europe) — tap a cluster to zoom in and separate it
+
+─────────────────────
+COUNTRIES — OVERHAULED
+─────────────────────
+
+• Fixed: viewing a friend's profile could undercount their countries
+  visited if they had private burgers — totals now correctly include
+  every country, public or private
+• Friends' Countries list now shows an "Also visited (private) 🔒" section
+  for countries only represented by private burgers
+• Countries are now tappable — both on your own profile and a friend's —
+  showing a list of every burger logged in that country, sorted by score
+• Tap any burger in that list to open its full detail view
+
+─────────────────────
+STATS — REDESIGNED
+─────────────────────
+
+• New hero header showing your animated overall average score with a
+  colour-matched gradient and a tagline based on your average
+  ("Burger connoisseur 👑", "Tough crowd! 😅", etc.)
+• Overview stat cards (Avg score, Burgers, Countries, Total spent) now
+  animate in with a count-up effect and subtle colour-tinted backgrounds
+• All sections now animate into place with a staggered fade/slide on open
+• Score distribution chart bars now grow in with a springy animation
+• Score over time chart line and fill now draw in left-to-right
+• Fixed: questers' Avg score, Top burgers podium, score distribution, and
+  score-over-time chart all used the burger owner's score instead of the
+  quester's own score — now corrected throughout
+
+─────────────────────
+BUG FIXES
+─────────────────────
+
+• Fixed: liking a burger or its data finishing loading could cause the
+  burger detail view to instantly close when opened from a friend's
+  profile, countries list, or other nested screens
+• Fixed: friend's burger detail view was missing the Like/Share row and
+  the "who liked this" list present on your own burgers
+• Fixed: Explore's "Reviews" button always showed a count even for a
+  single visit, and has been renamed to "Visits" for clarity
+
 ### 2.0.0 - June 2026
 BurgerPassport 2.0 🍔
 ─────────────────────
