@@ -318,13 +318,6 @@ PASSPORT
   (red, blue, green, sepia) instead of plain grey circles
 
 ─────────────────────
-MAP
-─────────────────────
-
-• Pins now cluster automatically when zoomed out, showing a count badge
-  in dense areas (e.g. Europe) — tap a cluster to zoom in and separate it
-
-─────────────────────
 COUNTRIES — OVERHAULED
 ─────────────────────
 
