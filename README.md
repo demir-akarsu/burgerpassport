@@ -289,6 +289,61 @@ firebase deploy --only functions
 
 ## Version History
 
+### 2.2.0 - June 2026
+BurgerPassport 2.2 🍔
+─────────────────────
+
+The rewards update. A completely new badges system, an overhauled
+Passport tier ladder, and a handful of bug fixes.
+
+─────────────────────
+REWARDS & BADGES
+─────────────────────
+
+• 22 badges across 6 categories — Volume, Explorer, Critic, Diet,
+  Social, and Quirky
+• Volume badges: First Bite, Getting Hungry, Bronze Palate, Silver
+  Tongue, Gold Standard, Diamond Jaw, Legend (1, 5, 10, 25, 50, 100,
+  250 burgers)
+• Explorer badges: Passport Starter, World Traveller, Globetrotter,
+  Around the World (3, 5, 10, 20 countries), Continental (3 continents),
+  Local Legend (10+ burgers in one city)
+• Critic badges (hidden until unlocked): Tough Crowd (5 burgers under
+  5.0), Connoisseur (10 burgers at 9.0+), Perfectionist (a perfect 10)
+• Diet badges: Going Green (first vegan burger), Plant Pioneer (10 vegan
+  burgers)
+• Social badges (hidden): Squad Goals (quested 5 friends' burgers)
+• Quirky badges (hidden): Night Owl (burger logged after midnight),
+  Whirlwind (3 countries in one calendar month)
+• Hidden badges show as ??? in the grid until unlocked — tap any badge
+  to see its name, description, and locked/unlocked status
+• Animated toast notification springs in from the top whenever a badge
+  is unlocked — shown after every burger save or edit
+• Badges stored in Firestore so they persist across devices and app
+  reinstalls
+• Existing users receive all earned badges automatically on first launch
+  after updating — with toasts for each one
+
+─────────────────────
+PASSPORT — TIER OVERHAUL
+─────────────────────
+
+• 7-tier ladder replaces the previous 4-tier system:
+  🍔 Beginner (1–4) → 🍔🍔 Casual (5–9) → 🥉 Bronze (10–24) →
+  🥈 Silver (25–49) → 🥇 Gold (50–99) → 💎 Diamond (100–249) →
+  👑 Legend (250+)
+• Passport view now has two tabs — Stamps and Rewards — keeping the tier
+  banner, progress bar, and stats always visible at the top
+• New country stamps also trigger a toast notification on first visit
+
+─────────────────────
+BUG FIXES
+─────────────────────
+
+• Fixed: friends count on a friend's profile showed too high — was
+  counting stale/pending documents in the friends subcollection instead
+  of using the accurate stored friendCount field
+
 ### 2.1.0 - June 2026
 BurgerPassport 2.1 🍔
 ─────────────────────
