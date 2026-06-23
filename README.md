@@ -289,6 +289,85 @@ firebase deploy --only functions
 
 ## Version History
 
+### 2.3.0 - June 2026
+BurgerPassport 2.3 🍔
+─────────────────────
+
+The passport update. A completely redesigned Passport view that looks
+and feels like a real travel document, 10 new badges, and several
+bug fixes.
+
+─────────────────────
+PASSPORT — REDESIGNED
+─────────────────────
+
+• New passport data page — deep navy background with gold typography,
+  your profile photo in a passport-photo box, and official data fields
+  (Holder, Rank, Member Since, Currency, Passport No.)
+• Passport number is unique and permanent per account, derived from
+  your user ID
+• Holographic stamp on the right side of the data page — animated
+  iridescent rings rotating in opposite directions with a 🍔 centre
+  and circular "BGRPPT • BURGER PASSPORT •" text
+• Stats row (Burgers / Countries / Avg Score) and gold progress bar
+  embedded in the navy data page
+• Machine-readable zone (MRZ) below the stats — decorative <<< lines
+  matching real passport styling
+• Stamps and Rewards are now separate tabs within the passport, accessed
+  via a gold underline tab bar at the bottom of the navy section
+• Country stamps now grouped by continent — Europe, North America,
+  South America, Asia, Africa, Oceania, Antarctica — each rendered as
+  a passport page with a navy spine/binding stripe, cream background,
+  ruled horizontal lines, continent header in tracked uppercase, and
+  page number in the corner
+• Rewards tab matches the stamp page aesthetic — same cream background,
+  ruled lines, navy spine, and ink-brown typography — consistent in both
+  light and dark mode (all colours are hardcoded, not system adaptive)
+• Profile photo in the passport data page is tappable to enlarge, with
+  pinch-to-zoom and swipe-down to dismiss
+
+─────────────────────
+BADGES — 10 NEW ADDITIONS
+─────────────────────
+
+• Explorer: Home Turf 🏠 (5 burgers in most-visited country), Border
+  Hopper 🛂 (2 countries in one weekend), Return Visit 🔁 (same
+  restaurant twice)
+• Critic: Consistent 📐 (10 burgers within 1 point of each other),
+  Harsh Judge ⚖️ (never above 6.0 across 10+ burgers), Easy Pleased
+  😊 (never below 7.0 across 10+ burgers)
+• Social: Popular ❤️ (a burger liked by 5+ people), Influencer ⭐
+  (3+ friends quest the same burger)
+• Quirky: Double Decker 2️⃣ (2 burgers in one day), On a Roll 🎳
+  (burgers in 3 consecutive weeks)
+• Story Mode renamed from Volume; Plant Based renamed from Diet
+• Casual tier icon updated from 🍔🍔 to 🔥; Getting Hungry badge
+  updated to match
+
+─────────────────────
+OTHER IMPROVEMENTS
+─────────────────────
+
+• Tapping a profile photo (your own or a friend's) now opens it
+  fullscreen with pinch-to-zoom and swipe-down to dismiss
+• Continent grouping correctly places Lanzarote in Europe and gives
+  Antarctica its own section (🧊)
+• Tier icon next to usernames now correctly includes quested burgers
+  in the count — fixes incorrect tier display for heavy questers
+• Passport average score now uses each user's own quested score rather
+  than the burger owner's score
+
+─────────────────────
+BUG FIXES
+─────────────────────
+
+• Fixed: passport average score used owner's score for quested burgers
+  instead of the viewer's own score
+• Fixed: tier icon on own profile excluded quested burgers from the
+  count, showing a lower tier than earned
+• Fixed: Stamps/Rewards tab bar only registered taps on the text label,
+  not the surrounding area
+
 ### 2.2.0 - June 2026
 BurgerPassport 2.2 🍔
 ─────────────────────
