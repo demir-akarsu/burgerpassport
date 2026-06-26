@@ -289,6 +289,35 @@ firebase deploy --only functions
 
 ## Version History
 
+### 3.0.0 - June 2026
+What's new in v3.0.0
+This is the biggest update to BurgerPassport yet.
+BurgerPassport Pro
+
+Unlock the full experience with a one-time purchase — no subscription, no hidden fees.
+Custom Scoring
+
+Rename any scoring category, add up to 4 of your own, and set custom weights so what matters most to you counts more.
+Advanced Stats
+
+A brand new Advanced tab with monthly score trends, restaurant leaderboard, category radar chart, score velocity, biggest score swing, spending insights, streak tracker and more.
+Improved Scoring Step
+
+Score, Weights and Categories are now separate tabs — much cleaner to use.
+People You May Know
+
+The Add Friend screen now suggests people based on your friends network, with mutual friend counts shown.
+Export Your Data
+
+Export all your burger entries as a CSV — open in Numbers, Excel or any spreadsheet app. Free for everyone.
+Better Notifications
+
+The notifications screen now shows your weekly activity and friend count when there's nothing new.
+First-Time Experience
+
+New empty states on Home and My Burgers guide new users through logging their first burger.
+Bug fixes and performance improvements
+
 ### 2.3.0 - June 2026
 BurgerPassport 2.3 🍔
 ─────────────────────
