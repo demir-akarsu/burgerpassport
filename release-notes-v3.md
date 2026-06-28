@@ -1,3 +1,18 @@
+# Version 3 Release Notes & Update History
+
+### 3.2.0 - June 2026
+Explore tab
+- New two-row filter bar: search + list/map toggle on row 1, Friends / Vegan / Near me / Sort pills on row 2
+- Near me filter — uses device location to show burgers in the user's city
+- Friends filter now fetches all friend burgers directly from Firestore rather than filtering the paginated page, so all friends show correctly
+- Skeleton loading cards while the feed is fetching
+- Haptic feedback on like
+- Location permission alert with deep link to Settings if denied
+
+Bug fixes
+- Friends filter was missing burgers from friends whose entries weren't in the first page of results
+- le_chonkre (formerly rtsmre) username corrected in Firestore usernames collection
+
 ### 3.1.0 - June 2026
 New
 - Perfect 10 celebration: full-screen gold confetti animation with triple haptic when any burger scores 9.99+, fires on new entry, edit, and quester submit flows
