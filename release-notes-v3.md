@@ -1,5 +1,17 @@
 # Version 3 Release Notes & Update History
 
+### 3.3.0 - June 2026
+v3.2.0
+
+Launch experience
+- New LaunchScreenView gates the main UI behind a readiness check: auth state, profile, and friends list must all resolve (or hit a timeout) before the app appears
+- Fixes friend count flashing 0 before populating with the real value
+- 4-second hard timeout ensures the app never hangs indefinitely on poor connectivity
+- Removed unnecessary Messaging.deleteToken() call on every foreground — was forcing an unneeded FCM token refresh on each app resume
+
+Misc
+- App Privacy updated to declare Coarse Location collection
+
 ### 3.2.0 - June 2026
 Explore tab
 - New two-row filter bar: search + list/map toggle on row 1, Friends / Vegan / Near me / Sort pills on row 2
