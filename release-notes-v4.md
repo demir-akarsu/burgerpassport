@@ -1,5 +1,17 @@
 # Version 4 Release Notes & Update History
 
+### 4.1.0 - July 2026
+v4.1.0
+
+Bug fixes
+- Champion badge progression now correctly counts quested burgers — previously only owned burgers were counted, meaning questers couldn't progress past Pebble Badge
+- Weekly burger count in the Notifications tab now includes quested burgers
+- Average score in Notifications tab now includes quested burgers
+- Badge backfill updated to wait for questedEntries to load before running, eliminating race condition where quested burgers weren't available in time
+- Removed champion badge check from quested snapshot listener — was firing on every app launch and could cause repeat badge toasts in some conditions
+- Added retry logic to earnedIds Firestore fetch in both checkAndAwardBadges and checkAndAwardChampionBadges to handle cold cache on reinstall
+- Backfill key bumped v4 → v5 to trigger re-run for existing users
+
 ### 4.0.0 - July 2026
 v4.0.0
 
