@@ -1,5 +1,21 @@
 # Version 4 Release Notes & Update History
 
+### 4.2.0 - July 2026
+v4.2.0
+
+Offline / poor connection improvements
+- Profile name, bio and currency now load from local cache instantly on app open — no more "Burger Fan" placeholder on slow connections
+- Pro unlock status cached to UserDefaults — "Pro" badge shows immediately without waiting for StoreKit verification
+- Earned badges (Rewards tab and Story tab) cached to UserDefaults — champion progression and passport stamps now visible on poor or no connection
+- Badge cache updated automatically whenever new badges are awarded so it stays in sync without extra reads
+
+Edit burger — photo step
+- Fixed inconsistent photo sizes when editing an existing burger
+- Photos now display as consistent squares matching the log new burger experience
+- Fixed add button size to match photo cell size
+- Drag to reorder now uses native onDrag/onDrop (same as new burger flow)
+- EditPhotoThumbnail now uses explicit frame(width:height:) with calculated cell size to guarantee square rendering regardless of async image load state
+
 ### 4.1.0 - July 2026
 v4.1.0
 
