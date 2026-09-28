@@ -1,5 +1,26 @@
 # Version 5 Release Notes & Update History
 
+### 5.2.0 - September 2026
+---
+v5.2.0
+Added
+Restaurant-level map grouping: burgers logged at the same restaurant now group onto a single map pin (computed from normalized restaurant name + city + country, no schema migration needed) across Home, friend profiles, and Explore's map
+Unified restaurant sheet: tapping any pin (single or multi-burger) opens a new restaurant-first view with:
+Full-bleed swipeable photo gallery hero
+Aggregate stats bar (visit count, average score, best score)
+List of every burger logged at that restaurant
+Embedded map preview with a direct "Open in Maps" action
+Visit-count badge on multi-burger map pins
+Fixed
+"Best" score could occasionally display lower than "Average" on burgers with quester scores, due to the two stats being computed on inconsistent bases — both now use averageGroupScore
+Map pin tap not opening Apple Maps (was being swallowed by MapKit's internal gesture recognizers; fixed by disabling interaction at the Map init level via interactionModes: [] rather than a post-hoc modifier)
+Visit-count badge clipping at the top edge of the pin
+Explore feed briefly showing "1 like" text missing on first card after the likes performance fix, caused by like/comment counts not being persisted to the local cache
+Performance
+Eliminated a full likes subcollection scan on every Explore card and burger detail view — now trusts the already-fetched likeCount field on the burger document instead of re-deriving it
+Explore feed now caches owner usernames, avatars, and burger counts locally, so profile info renders immediately from last-known values on cold launch instead of flashing "@unknown" while the network fetch completes
+
+
 ### 5.1.0 - September 2026 (hotfix)
 v5.1.0
 
