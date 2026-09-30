@@ -1,5 +1,13 @@
 # Version 5 Release Notes & Update History
-### Release Notes — v5.2.1 (hotfix) - September 2026
+
+### v5.3.0
+
+Fixed
+
+Settings → Privacy & Safety → Blocked users is back. The screen to view and unblock people you've blocked existed in the app already, but the link to reach it from Settings had gone missing — you could block someone from a comment, but had no way to undo it. Fixed.
+Added a working "Contact support" link in Settings → Support BurgerPassport, which opens a pre-filled support email (app version, iOS version, and account info included automatically) rather than requiring you to track down an address yourself.
+
+### v5.2.1 (hotfix) - September 2026
 Fixed
 
 Default avatar background colors are now consistent for the same user across all screens. Previously, the color was derived from different seed values depending on the view (full username in some places, a single initial in others), so the same person could appear as two different colors on Explore vs. burger detail/comments. The color is now derived consistently from a normalized seed everywhere.
