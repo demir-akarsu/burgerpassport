@@ -1,4 +1,8 @@
 # Version 5 Release Notes & Update History
+### Release Notes — v5.2.1 (hotfix) - September 2026
+Fixed
+
+Default avatar background colors are now consistent for the same user across all screens. Previously, the color was derived from different seed values depending on the view (full username in some places, a single initial in others), so the same person could appear as two different colors on Explore vs. burger detail/comments. The color is now derived consistently from a normalized seed everywhere.
 
 ### 5.2.0 - September 2026
 ---
