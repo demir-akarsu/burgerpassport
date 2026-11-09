@@ -1,7 +1,7 @@
 # Version 6 Release Notes & Update History
 
-### 6.2.0 - November 2026
-v6.2.0
+### 6.3.0 - November 2026
+v6.3.0
 
 ---
 
@@ -17,8 +17,8 @@ v6.2.0
 
 ---
 
-### 6.1.0 - November 2026 (draft)
-v6.1.0
+### 6.2.0 - November 2026 
+v6.2.0
 
 ---
 
@@ -54,8 +54,8 @@ v6.1.0
 
 ---
 
-### 6.0.1 - November 2026 (security update)
-v6.0.1
+### 6.1.0 - November 2026 (security update)
+v6.1.0
 
 ---
 
