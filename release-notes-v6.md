@@ -1,5 +1,15 @@
 # Version 6 Release Notes & Update History
 
+### 6.4.0 - November 2026
+
+v6.4.0
+
+🔧 Improvements
+Tier icons now show next to people's names in the Pending requests list in Friends, as they do everywhere else
+Notifications are tidier: the name and tier icon sit on the first line, with what they did (liked your burger, commented, etc.) underneath
+🐛 Fixes
+Fixed tier icons showing the wrong tier in comments, likes and other lists, for example Gold for someone who is Silver in their Passport. The icon now always matches the tier in Passport, and your own icon is always based on your real burgers
+
 ### 6.3.0 - November 2026
 v6.3.0
 
